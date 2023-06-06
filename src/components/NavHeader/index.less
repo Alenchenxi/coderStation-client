@@ -1,0 +1,94 @@
+@import "../../styles/var.less";
+
+// select下拉菜单样式
+.submenu {
+    border-radius: @commonBorRad;
+    padding: 5px 0;
+}
+
+.navHeader-container {
+    height: 100%;
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+    color: #fff !important;
+
+    & .navHeader-icon {
+        width: 300px;
+        height: 100%;
+        background: url(../../../public/assets/logo1.png) center/110% no-repeat;
+    }
+
+    & .navHeader-links {
+        width: 800px;
+        margin: 0 15px 0 15px;
+
+        & a {
+            margin: 0 24px;
+            color: #fff;
+            font-size: 1.2em;
+
+            &:hover {
+                color: @primary;
+            }
+        }
+    }
+
+    & .inputContainer {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: -140px;
+        margin-right: 10px;
+
+        &>* {
+            height: 60%;
+        }
+
+        & button {
+            border-radius: 0 @commonBorRad @commonBorRad 0 !important;
+        }
+    }
+
+    & .navHeader-search {
+        & .ant-select-selector {
+            border-radius: @commonBorRad !important;
+            height: 38px;
+
+            &>span {
+                height: 100%;
+                line-height: 37px;
+            }
+        }
+    }
+
+    & .loginBtn,
+    & .popover {
+        width: 100px;
+        margin-right: 40px;
+        margin-left: 20px;
+        height: 35px;
+        border-radius: @commonBorRad;
+    }
+
+    & .popover {
+        height: 50px;
+        margin-top: -5px;
+    }
+
+    & .loginChange {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.input,
+.checkbox {
+    border-radius: 2px;
+}
+
+.captcha {
+    position: absolute;
+    cursor: pointer;
+    top: 48%;
+    right: 25px;
+}
+
+.btns {
+    border-radius: 2px;
+    margin: 0 5px;
+}

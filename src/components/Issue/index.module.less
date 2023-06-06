@@ -1,0 +1,23 @@
+@import url(../../styles/var.less);
+// 整个问答列表容器，包括问答和分页
+.issue-container{
+    width: 100%;
+    padding:0 60px 40px 60px;
+    // 问答列表容器
+   & .issues{
+    width: 100%;
+    }
+    // 加载包装器的样式
+
+    & .paginationContainer{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+.ant-spin-nested-loading {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+

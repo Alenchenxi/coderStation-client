@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    & .left{
+        width: 70%;
+        padding:0 60px;
+        & .pagination{
+            text-align: center;
+            margin-top: 30px;
+        }
+        & .notFond{
+            text-align: center;
+            font-size: 3em;
+            font-weight: 300;
+            padding-top: 200px;
+        }
+    }
+    & .right{
+        width: 30%;
+        flex-grow: 1;
+        &>*{
+            margin-bottom: 30px;
+        }
+    }
+}

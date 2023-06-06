@@ -1,0 +1,70 @@
+@import url(../../styles/var.less);
+
+.book-item-container {
+    width: 100%;
+    height: 130px;
+    padding: 30px 20px 10px 20px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font-weight: 100;
+
+    // 回答和浏览的容器
+    & .numContainer {
+        height: 50%;
+        text-align: center;
+        color: @lightGrayTxt;
+        margin: 20px 35px 0 15px;
+
+        // 统一处理数字
+        & .num {
+            font-size: 1.3em;
+        }
+
+        // 统一处理文字
+        & .txt {
+            font-size: 1.2em;
+        }
+    }
+
+    // 问答的主要内容容器
+    & .content {
+        height: 100%;
+        margin-left: 5px;
+        flex: 1 0;
+        display: grid;
+        grid-template-columns: 70px auto;
+        grid-template-rows: 40% 60%;
+        align-items: center;
+        overflow: hidden;
+
+        & .imgContainer {
+            width: 50px;
+            grid-area: 1/1/3/2;
+
+            & img {
+                width: 100%;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+
+        & .title {
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        & .desc {
+            width: 100%;
+            height: 75%;
+            margin-top: -20px;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.5em;
+            grid-area: 2/2/3/-1;
+        }
+    }
+
+}

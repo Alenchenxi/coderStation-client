@@ -1,0 +1,30 @@
+@import url(../../styles/var.less);
+.container{
+    width: 100%;
+    padding-bottom: 50px;
+   & .commentContainer{
+    width: inherit;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:25px 20px 10px 20px;
+    margin-bottom: 30px;
+    color:@lightGrayTxt;
+    &>*{
+        margin:25px 0;
+    }
+    & .title{
+        font-weight: 300;
+        font-size: 1.7em;
+    }
+    & .userDetail{
+        display:flex;
+        align-items: center;
+        &>*{
+            margin-right: 10px;
+        }
+    }
+    & .content img{
+        max-width: 100%;
+    }
+}
+}

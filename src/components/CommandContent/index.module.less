@@ -1,0 +1,62 @@
+@import url(../../styles/var.less);
+.container{
+   width: @IssueRight;
+    border-radius: @commonBorRad;
+   //  标题样式
+    & .title{
+      font-weight: 400;
+    }
+   //  轮播图容器样式
+    & .carousel{
+    width: 100%;
+    // 轮播图指示器的样式
+     & ul li button{
+        background-color: rgb(236, 26, 247);
+     }
+
+    //  轮播图激活样式在index.css中有重置
+
+    //  & ul li.slick-active > button{
+    //     background: #000 !important;
+    //  }
+    //  轮播图下标位置
+    // 轮播图指示器位置
+     & > ul{
+        bottom: -5px !important;
+     }
+     & .carouselItem{
+        width: 100%;
+        & .carouselImg{
+            width: 100%;
+            height: 120px;
+        }
+     }
+    }
+   //  包裹组件样式
+    & .commandItemContainer{
+      width: 100%;
+      margin-top: 20px;
+      // 单个内容组件容器样式
+       & .commandItem{
+         padding:10px;
+         border-top: 1px solid @lightGrayTxt;
+         display: flex;
+         align-items: center;
+         & > div{
+            box-sizing: border-box;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            margin-right: 10px;
+            color:#fff;
+            background-color:@primary;
+            border-radius: 5px;
+         }
+         & a{
+            width: fit-content;
+            flex-grow: 1;
+         }
+       }
+    }
+}
