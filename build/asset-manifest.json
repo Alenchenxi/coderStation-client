@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/coderStation-client/static/css/main.02d7d3f0.css",
-    "main.js": "/coderStation-client/assets/js/main.c407efff.js",
-    "assets/media/index.cjs": "/coderStation-client/assets/media/index.c05687ef19f5bac24939.cjs",
-    "assets/media/iconfont.ttf?t=1675231156454": "/coderStation-client/assets/media/iconfont.c1084e73fe5481cf8245.ttf",
-    "index.html": "/coderStation-client/index.html",
-    "main.02d7d3f0.css.map": "/coderStation-client/static/css/main.02d7d3f0.css.map",
-    "main.c407efff.js.map": "/coderStation-client/assets/js/main.c407efff.js.map"
+    "main.css": "./static/css/main.fbe40cf6.css",
+    "main.js": "./assets/js/main.110f94c7.js",
+    "assets/media/index.cjs": "./assets/media/index.c05687ef19f5bac24939.cjs",
+    "assets/media/iconfont.ttf?t=1675231156454": "./assets/media/iconfont.c1084e73fe5481cf8245.ttf",
+    "index.html": "./index.html",
+    "main.fbe40cf6.css.map": "./static/css/main.fbe40cf6.css.map",
+    "main.110f94c7.js.map": "./assets/js/main.110f94c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.02d7d3f0.css",
-    "assets/js/main.c407efff.js"
+    "static/css/main.fbe40cf6.css",
+    "assets/js/main.110f94c7.js"
   ]
 }
